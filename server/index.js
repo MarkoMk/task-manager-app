@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 3000;
 
 // Middleware
 app.use(express.json());
-app.use(express.static(path.join(__dirname, '../public')));
+app.use(express.static(path.join(__dirname, '../client')));
 
 // MongoDB Connection
 mongoose.connect(process.env.MONGO_URI, {
@@ -26,9 +26,9 @@ mongoose.connect(process.env.MONGO_URI, {
 app.use('/api/tasks', taskRoutes);
 app.use('/api/users', userRoutes);
 
-// Serve index.html for root
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public/index.html'));
+// Serve React app for all routes
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../client/index.html'));
 });
 
 app.listen(PORT, () => {
