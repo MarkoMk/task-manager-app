@@ -1,0 +1,156 @@
+/* General body styling */
+body {
+    background-color: #f3f4f6; /* bg-gray-100 */
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Container for main content */
+.container {
+    width: 100%;
+    max-width: 1280px; /* max-w-7xl */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem; /* p-4 */
+}
+
+/* Header styling */
+header {
+    background-color: #2563eb; /* bg-blue-600 */
+    color: #ffffff; /* text-white */
+    padding: 1rem; /* p-4 */
+}
+
+/* Header title */
+header h1 {
+    font-size: 1.5rem; /* text-2xl */
+    font-weight: 700; /* font-bold */
+}
+
+/* Navigation styling */
+header nav {
+    margin-top: 0.5rem; /* mt-2 */
+}
+
+header nav a {
+    color: #ffffff; /* text-white */
+    margin-right: 1rem; /* mr-4 */
+    text-decoration: none;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main content heading */
+main h2 {
+    font-size: 1.25rem; /* text-xl */
+    font-weight: 600; /* font-semibold */
+}
+
+/* Form styling */
+form {
+    margin-top: 1rem; /* mt-4 */
+}
+
+form .form-group {
+    margin-bottom: 1rem; /* mb-4 */
+}
+
+form label {
+    display: block;
+    font-size: 0.875rem; /* text-sm */
+    font-weight: 500; /* font-medium */
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="date"],
+form textarea {
+    width: 100%; /* w-full */
+    padding: 0.5rem; /* p-2 */
+    border: 1px solid #d1d5db; /* border, border-gray-300 */
+    border-radius: 0.25rem; /* rounded */
+    box-sizing: border-box;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+/* Button styling */
+button,
+form button {
+    background-color: #2563eb; /* bg-blue-600 */
+    color: #ffffff; /* text-white */
+    padding: 0.5rem 1rem; /* p-2 */
+    border-radius: 0.25rem; /* rounded */
+    border: none;
+    cursor: pointer;
+    font-size: 0.875rem; /* text-sm */
+}
+
+button:hover,
+form button:hover {
+    background-color: #1d4ed8; /* darker blue for hover */
+}
+
+/* Delete button styling */
+button.delete {
+    background-color: transparent;
+    color: #dc2626; /* text-red-600 */
+    margin-left: 0.5rem; /* ml-2 */
+}
+
+button.delete:hover {
+    color: #b91c1c; /* darker red for hover */
+}
+
+/* Task list styling */
+ul {
+    margin-top: 1rem; /* mt-4 */
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 0.5rem; /* p-2 */
+    border-bottom: 1px solid #d1d5db; /* border-b, border-gray-300 */
+}
+
+ul li a {
+    color: #2563eb; /* text-blue-600 */
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer styling */
+footer {
+    background-color: #1f2937; /* bg-gray-800 */
+    color: #ffffff; /* text-white */
+    padding: 1rem; /* p-4 */
+    text-align: center; /* text-center */
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive adjustments */
+@media (min-width: 640px) {
+    .container {
+        padding: 1.5rem; /* increased padding for larger screens */
+    }
+
+    header h1 {
+        font-size: 1.875rem; /* larger font for header */
+    }
+
+    main h2 {
+        font-size: 1.5rem; /* larger font for main heading */
+    }
+}
